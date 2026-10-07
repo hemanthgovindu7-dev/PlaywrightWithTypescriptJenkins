@@ -1,0 +1,13 @@
+repo link from for of loop : PlaywrightTutorialFullCourse
+repo link from for of loop : PostmanCollectionsByTestersTalk
+repo link from for of loop : PlaywrightAPITestingTutorial
+repo link from for of loop : RestAssuredAPITestingFramework
+repo link from for of loop : PlaywrightTypeScriptTutorialFullCourse
+repo link from for of loop : CypressTutorialFullCourse
+=============================================
+repo link from for loop : PlaywrightTutorialFullCourse
+repo link from for loop : PostmanCollectionsByTestersTalk
+repo link from for loop : PlaywrightAPITestingTutorial
+repo link from for loop : RestAssuredAPITestingFramework
+repo link from for loop : PlaywrightTypeScriptTutorialFullCourse
+repo link from for loop : CypressTutorialFullCourse

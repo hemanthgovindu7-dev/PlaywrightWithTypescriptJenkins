@@ -1,0 +1,6 @@
+repo link: PlaywrightTutorialFullCourse
+repo link: PostmanCollectionsByTestersTalk
+repo link: PlaywrightAPITestingTutorial
+repo link: RestAssuredAPITestingFramework
+repo link: PlaywrightTypeScriptTutorialFullCourse
+repo link: CypressTutorialFullCourse

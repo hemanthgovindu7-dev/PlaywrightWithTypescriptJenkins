@@ -1,0 +1,22 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="6.905010999999998">
+<testsuite name="Chapter5\DataDrivenTestingUsingJSON.spec.ts" timestamp="2026-10-06T02:37:41.051Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="8.939" errors="0">
+<testcase name="Data driven testing using JSON file:Playwright by Testrs Talk" classname="Chapter5\DataDrivenTestingUsingJSON.spec.ts" time="4.74">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Data driven testing using JSON file:JavaScript by Testrs Talk" classname="Chapter5\DataDrivenTestingUsingJSON.spec.ts" time="4.199">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
