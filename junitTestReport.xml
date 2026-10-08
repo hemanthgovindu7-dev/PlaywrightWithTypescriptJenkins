@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="47.803384">
-<testsuite name="Chapter3\TagsTest.spec.ts" timestamp="2026-10-07T15:39:16.133Z" hostname="Google Chrome" tests="2" failures="1" skipped="0" time="48.779" errors="0">
-<testcase name="Tags spec test2" classname="Chapter3\TagsTest.spec.ts" time="5.525">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="47.43523">
+<testsuite name="Chapter3\TagsTest.spec.ts" timestamp="2026-10-08T01:39:20.191Z" hostname="Google Chrome" tests="2" failures="1" skipped="0" time="48.861" errors="0">
+<testcase name="Tags spec test2" classname="Chapter3\TagsTest.spec.ts" time="5.691">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test2-Google-Chrome\video.webm]]
@@ -9,7 +9,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Tags spec test3" classname="Chapter3\TagsTest.spec.ts" time="43.254">
+<testcase name="Tags spec test3" classname="Chapter3\TagsTest.spec.ts" time="43.17">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\test-failed-1.png]]

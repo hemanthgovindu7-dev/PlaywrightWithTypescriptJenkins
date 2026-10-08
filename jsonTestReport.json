@@ -107,12 +107,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5525,
+                  "duration": 5691,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T15:39:16.553Z",
+                  "startTime": "2026-10-08T01:39:20.673Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -178,7 +178,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T15:39:16.569Z",
+                  "startTime": "2026-10-08T01:39:20.679Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -212,7 +212,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 13754,
+                  "duration": 13552,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73",
@@ -236,7 +236,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-10-07T15:39:33.609Z",
+                  "startTime": "2026-10-08T01:39:37.757Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -270,7 +270,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 13921,
+                  "duration": 14039,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n",
                     "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73",
@@ -294,7 +294,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 2,
-                  "startTime": "2026-10-07T15:39:48.875Z",
+                  "startTime": "2026-10-08T01:39:52.556Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -338,8 +338,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-07T15:39:16.056Z",
-    "duration": 47803.384,
+    "startTime": "2026-10-08T01:39:20.072Z",
+    "duration": 47435.229999999996,
     "expected": 1,
     "skipped": 0,
     "unexpected": 1,
