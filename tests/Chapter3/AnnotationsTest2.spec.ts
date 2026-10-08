@@ -16,7 +16,8 @@ test('Annotations spec test2', async ({ page }) => {
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEnabled();
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEmpty();
 });
-test.only('Annotations spec test3', async ({ page }) => {
+test('Annotations spec test3', async ({ page }) => {
+//test.only('Annotations spec test3', async ({ page }) => {
   await page.goto('https://www.youtube.com/');
   //Visible, editable, enabled, empty
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeVisible();
