@@ -1,6 +1,12 @@
 {
   "config": {
-    "argv": [],
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep",
+      "@RegressionTests"
+    ],
     "configFile": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\playwright.config.ts",
     "rootDir": "C:/Users/heman/PlayWrightTypeScriptRepo/tests",
     "failOnFlakyTests": false,
@@ -20,7 +26,7 @@
       {
         "outputDir": "C:/Users/heman/PlayWrightTypeScriptRepo/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
           "actualWorkers": 2
         },
@@ -70,22 +76,25 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.63.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Chapter5\\DataDrivenTestingUsingJSON.spec.ts",
-      "file": "Chapter5/DataDrivenTestingUsingJSON.spec.ts",
+      "title": "Chapter3\\TagsTest.spec.ts",
+      "file": "Chapter3/TagsTest.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Data driven testing using JSON file:Playwright by Testrs Talk",
+          "title": "Tags spec test2",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "SmokeTests",
+            "RegressionTests"
+          ],
           "tests": [
             {
               "timeout": 45000,
@@ -94,94 +103,246 @@
               "projectId": "Google Chrome",
               "projectName": "Google Chrome",
               "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T15:39:16.553Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test2-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test2-Google-Chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2ff2db3c129638634e82-e959b673a20d0d052cf1",
+          "file": "Chapter3/TagsTest.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Tags spec test3",
+          "ok": false,
+          "tags": [
+            "RegressionTests"
+          ],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 15579,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73",
+                    "location": {
+                      "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                      "column": 73,
+                      "line": 24
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                        "column": 73,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T15:39:16.569Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                    "column": 73,
+                    "line": 24
+                  }
+                },
                 {
                   "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4740,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 13754,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73",
+                    "location": {
+                      "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                      "column": 73,
+                      "line": 24
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                        "column": 73,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-06T02:37:41.475Z",
+                  "retry": 1,
+                  "startTime": "2026-10-07T15:39:33.609Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\\test-failed-1.png"
+                    },
+                    {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\\video.webm"
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\\error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\\trace.zip"
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\\trace.zip"
                     }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "08d86b535e9a0ad0d2c8-d6708857457778d32edf",
-          "file": "Chapter5/DataDrivenTestingUsingJSON.spec.ts",
-          "line": 16,
-          "column": 7
-        },
-        {
-          "title": "Data driven testing using JSON file:JavaScript by Testrs Talk",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Google Chrome",
-              "projectName": "Google Chrome",
-              "results": [
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                    "column": 73,
+                    "line": 24
+                  }
+                },
                 {
                   "workerIndex": 3,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 4199,
-                  "errors": [],
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13921,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73",
+                    "location": {
+                      "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                      "column": 73,
+                      "line": 24
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                        "column": 73,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('SearchXXX', { exact: true }).first()\nExpected: enabled\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEditable()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'SearchXXX'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Search'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeEmpty()\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts:24:73\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-06T02:37:41.517Z",
+                  "retry": 2,
+                  "startTime": "2026-10-07T15:39:48.875Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\\test-failed-1.png"
+                    },
+                    {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\\video.webm"
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\\error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\\trace.zip"
+                      "path": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\test-results\\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\\trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\heman\\PlayWrightTypeScriptRepo\\tests\\Chapter3\\TagsTest.spec.ts",
+                    "column": 73,
+                    "line": 24
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "08d86b535e9a0ad0d2c8-c33a6e2926f89f66a677",
-          "file": "Chapter5/DataDrivenTestingUsingJSON.spec.ts",
-          "line": 16,
-          "column": 7
+          "id": "2ff2db3c129638634e82-19c6ca1fe91e7410afe2",
+          "file": "Chapter3/TagsTest.spec.ts",
+          "line": 19,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-06T02:37:40.574Z",
-    "duration": 6905.010999999999,
-    "expected": 2,
+    "startTime": "2026-10-07T15:39:16.056Z",
+    "duration": 47803.384,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

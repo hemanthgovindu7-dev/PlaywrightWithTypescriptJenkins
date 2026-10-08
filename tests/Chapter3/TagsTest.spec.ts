@@ -21,6 +21,6 @@ test('Tags spec test3', {tag:['@RegressionTests']},async ({ page }) => {
   //Visible, editable, enabled, empty
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeVisible();
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEditable();
-  await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEnabled();
+  await expect(page.getByPlaceholder('SearchXXX',{exact:true}).first()).toBeEnabled();
   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEmpty();
 });

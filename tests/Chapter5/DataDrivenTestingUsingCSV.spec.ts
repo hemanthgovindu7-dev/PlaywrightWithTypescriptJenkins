@@ -12,12 +12,12 @@ const records= parse(fs.readFileSync(path.join(__dirname,'../../test-Data/qa/tes
     skipEmptyLines:true
 }) as TestRecords[];
 for (const record of records) {
-     test(`Data driven testing using CSV file:${record.Skill2}`, async ({ page }) => {
-  await page.goto(`${process.env.Google_URL}`);
- await page.getByLabel('Search',{exact:true}).first().click();
-  await page.getByLabel('Search',{exact:true}).first().fill(record.Skill2.toString())
-  await page.getByLabel('Search',{exact:true}).first().press('Enter');
-});
+//      test(`Data driven testing using CSV file:${record.Skill2}`, async ({ page }) => {
+//   await page.goto(`${process.env.Google_URL}`);
+//  await page.getByLabel('Search',{exact:true}).first().click();
+//   await page.getByLabel('Search',{exact:true}).first().fill(record.Skill2.toString())
+//   await page.getByLabel('Search',{exact:true}).first().press('Enter');
+// });
 }
 
 

@@ -1,22 +1,164 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="6.905010999999998">
-<testsuite name="Chapter5\DataDrivenTestingUsingJSON.spec.ts" timestamp="2026-10-06T02:37:41.051Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="8.939" errors="0">
-<testcase name="Data driven testing using JSON file:Playwright by Testrs Talk" classname="Chapter5\DataDrivenTestingUsingJSON.spec.ts" time="4.74">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="47.803384">
+<testsuite name="Chapter3\TagsTest.spec.ts" timestamp="2026-10-07T15:39:16.133Z" hostname="Google Chrome" tests="2" failures="1" skipped="0" time="48.779" errors="0">
+<testcase name="Tags spec test2" classname="Chapter3\TagsTest.spec.ts" time="5.525">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\video.webm]]
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test2-Google-Chrome\video.webm]]
 
-[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-e30d4-e-Playwright-by-Testrs-Talk-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test2-Google-Chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Data driven testing using JSON file:JavaScript by Testrs Talk" classname="Chapter5\DataDrivenTestingUsingJSON.spec.ts" time="4.199">
+<testcase name="Tags spec test3" classname="Chapter3\TagsTest.spec.ts" time="43.254">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\video.webm]]
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\test-failed-1.png]]
 
-[[ATTACHMENT|test-results\Chapter5-DataDrivenTesting-85e97-e-JavaScript-by-Testrs-Talk-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\trace.zip]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\trace.zip]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\video.webm]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\error-context.md]]
+
+[[ATTACHMENT|test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\trace.zip]]
 ]]>
 </system-out>
+<failure message="expect(locator).toBeEnabled() failed" type="expect.toBeEnabled">
+<![CDATA[  [Google Chrome] › Chapter3\TagsTest.spec.ts:19:5 › Tags spec test3 @RegressionTests ──────────────
+
+    Error: expect(locator).toBeEnabled() failed
+
+    Locator: getByPlaceholder('SearchXXX', { exact: true }).first()
+    Expected: enabled
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeEnabled" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms
+      - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()
+
+
+      22 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeVisible();
+      23 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEditable();
+    > 24 |   await expect(page.getByPlaceholder('SearchXXX',{exact:true}).first()).toBeEnabled();
+         |                                                                         ^
+      25 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEmpty();
+      26 | });
+        at C:\Users\heman\PlayWrightTypeScriptRepo\tests\Chapter3\TagsTest.spec.ts:24:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeEnabled() failed
+
+    Locator: getByPlaceholder('SearchXXX', { exact: true }).first()
+    Expected: enabled
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeEnabled" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms
+      - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()
+
+
+      22 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeVisible();
+      23 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEditable();
+    > 24 |   await expect(page.getByPlaceholder('SearchXXX',{exact:true}).first()).toBeEnabled();
+         |                                                                         ^
+      25 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEmpty();
+      26 | });
+        at C:\Users\heman\PlayWrightTypeScriptRepo\tests\Chapter3\TagsTest.spec.ts:24:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeEnabled() failed
+
+    Locator: getByPlaceholder('SearchXXX', { exact: true }).first()
+    Expected: enabled
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeEnabled" getByPlaceholder('SearchXXX', { exact: true }).first() with timeout 10000ms
+      - waiting for getByPlaceholder('SearchXXX', { exact: true }).first()
+
+
+      22 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeVisible();
+      23 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEditable();
+    > 24 |   await expect(page.getByPlaceholder('SearchXXX',{exact:true}).first()).toBeEnabled();
+         |                                                                         ^
+      25 |   await expect(page.getByPlaceholder('Search',{exact:true}).first()).toBeEmpty();
+      26 | });
+        at C:\Users\heman\PlayWrightTypeScriptRepo\tests\Chapter3\TagsTest.spec.ts:24:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter3-TagsTest-Tags-spec-test3-Google-Chrome-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
