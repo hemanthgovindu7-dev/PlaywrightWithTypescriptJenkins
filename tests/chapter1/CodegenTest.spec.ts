@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Codegen spec test', async ({ page }) => {
   await page.goto('https://www.youtube.com/');
-  console.log('Testing github auto push')
+  console.log('Testing github auto push 2')
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).fill('playwright by testers talk');
   await page.getByRole('button', { name: 'Search', description: 'Search' }).click();
