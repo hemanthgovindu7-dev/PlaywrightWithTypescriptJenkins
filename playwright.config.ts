@@ -46,7 +46,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     testIdAttribute: 'data-tab-item',
     video: 'on',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     trace: 'on',
     actionTimeout:10000,
